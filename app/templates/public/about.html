@@ -1,0 +1,10 @@
+{% extends "/public/templates/public_template.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block main %}
+    {% block header %}<h1 style= color:darkblue >About this system!</h1>{% endblock %}
+    <hr>
+    {% block description %} This automated data pipeline system produces data reports for Credit Counseling Services of Savannah. It emails a survey link to the client list, waits ten days for responses, and collects the responses and produces a report for the counseling agency. {% endblock %}
+
+{% endblock %}

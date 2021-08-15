@@ -1,0 +1,23 @@
+{% extends "/admin/templates/admin_template.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block main %}
+    {% block header %}<h1 style= color:darkblue >Admin Dashboard</h1>{% endblock %}
+    <hr>
+    {% block description %} See below for latest progress on most recent data report. {% endblock %}
+
+    <!-- Information on:
+        -System currently active?
+            +active likely means in 10 day process of collecting survey responses
+        -Most recent submission date & person's name?
+        -what part of the process is happening currently
+        -(if active) how many more days til completion
+        -(if active) how many clients we've heard from
+        -(if active) how many survey submissions received
+        
+        
+        -historic submissions (date submitted, date report sent out)
+     -->
+
+{% endblock %}

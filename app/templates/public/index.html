@@ -1,0 +1,14 @@
+{% extends "/public/templates/public_template.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+    {% block header %}<h1 style= color:darkblue >Welcome.</h1>{% endblock %}
+    <hr>
+    {% block description %} CCCS Data System is ready to operate. 
+    Click <a href="/admin/dashboard">here</a> or "Admin" at the top right to gain admin access to request reports and check progress of reports. {% endblock %}
+
+    <!-- Add Authentication System here -->
+
+{% endblock %}
+

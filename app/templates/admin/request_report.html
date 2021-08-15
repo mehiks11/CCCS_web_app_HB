@@ -1,0 +1,48 @@
+{% extends "/admin/templates/admin_template.html" %}
+
+{% block title %}CSV Template{% endblock %}
+
+{% block main %}
+    {% block header %}<h1 style=color:darkblue> Data Report Request Form</h1>{% endblock %}
+    
+    <hr>
+    
+    {% block description %} 
+    <p> Fill out the form and submit to receive a data report to the CCCS email on homebuyer services. </p>
+    <br>
+    <br>
+    {% endblock %}
+
+    <div class="container">
+        <div class="row">
+        <div class="col">
+            
+            <form action="/admin/request-report" method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label>Select CSV File</label>
+                    <div class='custom-file'>
+                        <input type="file" class="custom-file-input" name="csv" id="csv">
+                        <!-- <label class="custom-file-label" for="csv"> Select File... </label> -->
+                    </div>
+                </div>
+
+                <br>
+
+                <button type="submit" class= "btn btn-primary"> Upload File </button>
+            
+            </form>
+        </div>
+        </div>
+    </div>
+
+  
+
+{% endblock %}
+
+
+
+
+
+    
+

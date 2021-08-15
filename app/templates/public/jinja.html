@@ -1,0 +1,28 @@
+{% extends "/public/templates/public_template.html" %}
+
+{% block title %}Jinja{% endblock %}
+
+{% block main %}
+    {% block header %}<h1 style= color:darkblue >Jinja!</h1>{% endblock %}
+    
+    {% block description %}This is Jinja {% endblock %}
+
+    <h4>Variables</h4>
+    <hr>
+    <p>Name: {{ my_name }}</p>
+
+    <h4>Looping</h4>
+    <hr>
+    
+    <ul>
+        {% for lang in langs%}
+            <li> {{lang}}</li>  
+        {% endfor %}
+
+    </ul>
+
+
+
+    
+
+{% endblock %}
