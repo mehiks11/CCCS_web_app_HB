@@ -1,6 +1,5 @@
 from flask import Flask, session
 from flask_basicauth import BasicAuth 
-import flask_login
 
 #create app
 app = Flask(__name__)
